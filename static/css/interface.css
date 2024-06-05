@@ -7,6 +7,10 @@
     --pink-black: #1F001E; /* в хэдере и футере */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     max-width: 1920px;
     font-family: var(--font-family);
@@ -20,6 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    margin-top: 128px;
 
 
     h2 {
@@ -44,3 +49,4 @@ body {
         color: #a2004e;
     }
 }
+

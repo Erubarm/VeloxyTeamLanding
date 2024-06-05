@@ -1,5 +1,6 @@
 .price {
     margin-top: 128px;
+
     .price-list {
         margin-top: 72px;
         display: flex;
@@ -7,15 +8,33 @@
         gap: 24px;
 
         details {
-        padding: 32px 0px;
-        border-top: 2px solid #C3C3C3;
-        border-bottom: 2px solid #C3C3C3;
+            padding: 32px 0px;
+            border-top: 2px solid #C3C3C3;
+            border-bottom: 2px solid #C3C3C3;
 
-        .details-inner {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
+            .details-inner {
+                margin-top: 128px;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 140px;
+                p {
+                    font-family: var(--font-family);
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 140%;
+                    text-align: center;
+                    color: var(--main-color);
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+            }
             summary {
                 display: flex;
                 flex-direction: row;
@@ -29,6 +48,7 @@
                     font-weight: 600;
                     font-size: 32px;
                     color: var(--title-color-accent);
+                    width: 301px;
                 }
 
                 span {
@@ -40,10 +60,6 @@
                     color: #da639c;
                 }
             }
-    }
-    }
-
-    
-
-    
+        }   
+    }   
 }

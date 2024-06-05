@@ -1,0 +1,107 @@
+footer {
+    margin: 128px 0px;
+
+    .footer-head {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 2px solid #c3c3c3;
+        padding-bottom: 32px;
+
+
+        span {
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 32px;
+            color: var(--title-color-accent);
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 72px;
+
+            list-style: none;
+
+
+            a {
+                text-decoration: none;
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 24px;
+                color: #1f001e;
+            }
+        }
+    }
+
+    .footer-content {
+        margin-top: 64px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+
+        h2 {
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 32px;
+            color: var(--title-color-accent);
+        }
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            p {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 24px;
+                color: #1f001e;
+            }
+
+            a {
+                font-family: var(--font-family);
+                font-weight: 600;
+                font-size: 24px;
+                color: #1f001e;
+            }
+
+            .footer-links__items {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center ;
+            }
+
+            .footer-links__items__social {
+                text-decoration: underline;
+                text-decoration-skip-ink: none;
+
+                display: flex;
+                flex-direction: row;
+                gap: 24px;
+            }
+
+            .btn-up {
+                border-radius: 16px;
+                padding: 20px 36px;
+            
+                background: #a2004e;
+                opacity: 0.8;
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 140%;
+                color: #fff;
+
+                text-decoration: none;
+                text-align: center;
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 8px;
+            }
+        }
+    }
+}

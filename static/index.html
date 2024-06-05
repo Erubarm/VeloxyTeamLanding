@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/styles/index.css">
+    <link rel="stylesheet" href="/css/index.css">
     <title>VeloxyTeam</title>
 </head>
 <body>
@@ -16,11 +16,11 @@
               <span>VeloxyTeam</span>
             <nav>
                 <ul>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Галерея</a></li>
-                    <li><a href="#">Прайс</a></li>
-                    <li><a href="#">Вопросы</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#galery">Галерея</a></li>
+                    <li><a href="#price">Прайс</a></li>
+                    <li><a href="#questions">Вопросы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
             </nav>  
             </div>
@@ -28,35 +28,34 @@
         </div>
     </header>
     <main>
-        <section class="home">
+        <section class="home" id="home">
             <div class="container">
                 <h1>Студия <span>творчества</span></h1>
             </div>
             <div class="home-block">
                 <p>Эврика</p>
-                <img src="/assets/images/mayur-deshpande-zZPeoLxLRyM-unsplash 1.png" alt="Фоновое изображение Главная">
+                <img src="/images/mayur-deshpande-zZPeoLxLRyM-unsplash 1.png" alt="Фоновое изображение Главная">
                 
             </div>
         </section>
-        <section class="galery">
+        <section class="galery" id="galery">
             <div class="container">
                 <div class="title-block">
                     <h2>[ Галерея ]</h2>
                     <p>Игра с цветом является важным инструментом создания красивых и гармоничных произведений искусства.</p>
-                </div>
-                
+                </div>                
             </div>
-            <div class="galery-items">
-                <div class="galery-items__one-column">
-                    <img src="/assets/images/one-column-one-pic.png" alt="One picture">
-                    <img src="/assets/images/one-column-two-pic.png" alt="Two picture">
+                <div class="galery-items">
+                    <div class="galery-items__one-column">
+                        <img src="/images/one-column-one-pic.png" alt="One picture">
+                        <img src="/images/one-column-two-pic.png" alt="Two picture">
+                    </div>
+                    <div class="galery-items__two-column">
+                        <img src="/images/two-column-pic.png" alt="Three picture">
+                    </div>
                 </div>
-                <div class="galery-items__two-column">
-                    <img src="/assets/images/two-column-pic.png" alt="Three picture">
-                </div>
-            </div>
         </section>
-        <section class="price">
+        <section class="price" id="price">
             <div class="container">
                 <div class="title-block">
                     <h2>[ Прайс ]</h2>
@@ -67,12 +66,12 @@
                         <summary>
                             <p>Эпоксидная смола</p>
                             <span>[ от 500 до 6000 руб. ]</span>
-                            <img src="/assets/icons/plus.svg" alt="plus">
+                            <img src="/icons/plus.svg" alt="plus">
                         </summary>
                         <div class="details-inner">
-                            <img src="/assets/images/price-smola-one-pic.png" alt="smola-one-picture">
+                            <img src="/images/price-smola-pic-1.png" alt="smola-one-picture" class="details-inner__picture-one">
                             <p>Эпоксидная смола — это универсальный материал, который используется для создания множества различных изделий. Она отличается высокой прочностью, прозрачностью и стойкостью к внешним воздействиям. Благодаря этим свойствам, изделия из эпоксидной смолы не только красивы, но и долговечны.</p>
-                            <img src="/assets/images/price-smola-two-pic.png" alt="price-smola-two-pic">
+                            <img src="/images/price-smola-pic-2.png" alt="price-smola-two-pic" class="details-inner__picture-two">
                         </div>
                         
                     </details>
@@ -80,41 +79,41 @@
                         <summary>
                             <p>Живопись</p>
                             <span>[ от 1000 до 4500 руб. ]</span>
-                            <img src="/assets/icons/plus.svg" alt="plus">
+                            <img src="/icons/plus.svg" alt="plus">
                         </summary>
                     </details>
                     <details>
                         <summary>
                             <p>Полимерная глина</p>
                             <span>[ 500 руб. ]</span>
-                            <img src="/assets/icons/plus.svg" alt="plus">
+                            <img src="/icons/plus.svg" alt="plus">
                         </summary>
                     </details>
                     <details>
                         <summary>
                             <p>Роспись фигурок</p>
                             <span>[ от 300 до 700 руб. ]</span>
-                            <img src="/assets/icons/plus.svg" alt="plus">
+                            <img src="/icons/plus.svg" alt="plus">
                         </summary>
                     </details>
                     <details>
                         <summary>
                             <p>Роспись одежды</p>
                             <span>[ от 1500 до 3500 руб. ]</span>
-                            <img src="/assets/icons/plus.svg" alt="plus">
+                            <img src="/icons/plus.svg" alt="plus">
                         </summary>
                     </details>
                     <details>
                         <summary>
                             <p>Кокосовые свечи</p>
                             <span>[ 1500 руб. ]</span>
-                            <img src="/assets/icons/plus.svg" alt="plus">
+                            <img src="/icons/plus.svg" alt="plus">
                         </summary>
                     </details>
                 </div>
             </div>
         </section>
-        <section class="questions">
+        <section class="questions" id="questions">
             <div class="container">
                 <div class="title-block">
                     <h2>[ Вопросы ]</h2>
@@ -124,52 +123,60 @@
                     <details>
                         <summary>
                             <span>[ 01 ]</span>
-                            <span>Нужно ли записываться на мастер-класс заранее?</span>
-                            <img src="#" alt="#">
+                            <h3>Нужно ли записываться на мастер-класс заранее?</h3>
+                            <img src="/icons/plus.svg" alt="plus">
                         </summary>
+                        <div class="question-item__inner">
+                            <p>Записываться к нам на мастер-класс не нужно, вы прризодите и выбираете то, что вам по душе.</p>
+                            <img src="/images/questions-pic-1.png" alt="pic-1">
+                        </div>
+                        
                     </details>
                     <details>
                         <summary>
                             <span>[ 02 ]</span>
-                            <span>Можно ли сразу забрать свои поделки?</span>
-                            <img src="#" alt="#">
+                            <h3>Можно ли сразу забрать свои поделки?</h3>
+                            <img src="/icons/plus.svg" alt="plus">
                         </summary>
                     </details>
                     <details>
                         <summary>
                             <span>[ 03 ]</span>
-                            <span>Как долго длится мастер-класс?</span>
-                            <img src="#" alt="#">
+                            <h3>Как долго длится мастер-класс?</h3>
+                            <img src="/icons/plus.svg" alt="plus">
                         </summary>
                     </details>
                     <details>
                         <summary>
                             <span>[ 04 ]</span>
-                            <span>Возможны ли выездные мастер-классы?</span>
-                            <img src="#" alt="#">
+                            <h3>Возможны ли выездные мастер-классы?</h3>
+                            <img src="/icons/plus.svg" alt="plus">
                         </summary>
                     </details>
                     <details>
                         <summary>
                             <span>[ 05 ]</span>
-                            <span>Мастер-классы проводятся только для детей?</span>
-                            <img src="#" alt="#">
+                            <h3>Мастер-классы проводятся только для детей?</h3>
+                            <img src="/icons/plus.svg" alt="plus">
                         </summary>
                     </details>
                 </div>
             </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="container">
-                <h2>Давайте обсудим ваши предложения для мастер-класса</h2>
-                <form>
+                <div class="title-block">
+                    <h2>[ Контакты ]</h2>
+                    <p>Давайте обсудим ваши предложения для мастер-класса</p>
+                </div>
+                <form id="contactForm">
                     <div class="form-inputs">
-                        <input type="text" placeholder="Имя">
-                        <input type="text" placeholder="Фамилия">
-                        <input type="text" placeholder="Телефон">
-                        <input type="text" placeholder="Сообщение">
+                        <input type="text" name="first_name" placeholder="Имя" required>
+                        <input type="text" name="last_name" placeholder="Фамилия" required>
+                        <input type="text" name="phone" placeholder="Телефон" required>
+                        <input type="text" name="message" placeholder="Сообщение" required>
                     </div>
-                    <input type="submit" value="Отправить">
+                    <input type="submit" value="Отправить" class="questions-submit">
                 </form>
             </div>
         </section>
@@ -179,11 +186,11 @@
             <div class="footer-head">
                 <span>VeloxyTeam</span>
                 <ul>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Галерея</a></li>
-                    <li><a href="#">Прайс</a></li>
-                    <li><a href="#">Вопросы</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#galery">Галерея</a></li>
+                    <li><a href="#price">Прайс</a></li>
+                    <li><a href="#questions">Вопросы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
             </div>
             <div class="footer-content">
@@ -191,13 +198,17 @@
                 <div class="footer-links">
                     <p>Для записи:</p>
                     <a href="mailto:Evrika.Zavidovo@gmai.com">Evrika.Zavidovo@gmai.com</a>
-                    <div class="footer-links__social">
-                        <a href="#">Инстаграм</a>
-                        <a href="#">Телеграм</a>
+                    <div class="footer-links__items">
+                        <div class="footer-links__items__social">
+                            <a href="#">Инстаграм</a>
+                            <a href="#">Телеграм</a>
+                        </div>
+                        <a href="#home" class="btn-up">Вверх <img src="/icons/arrow.svg" alt="arrow"></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="js/formHandler.js"></script>
 </body>
 </html>
