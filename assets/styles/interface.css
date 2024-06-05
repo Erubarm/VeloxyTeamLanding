@@ -1,0 +1,46 @@
+:root {
+    --font-family: "Inter", sans-serif; /* Основной шрифт */
+    --second-family: "Playfair Display", sans-serif; /* Акцентный шрифт */
+    --title-color-accent: #a2004e; /* Акцентный цвет заголовков */
+    --title-color: #7d205d; /* цвет у маленьких заголовков */
+    --main-color: #ca407a; /* основной цвет */
+    --pink-black: #1F001E; /* в хэдере и футере */
+}
+
+body {
+    max-width: 1920px;
+    font-family: var(--font-family);
+}
+
+.container {
+    padding: 0 80px;
+}
+
+.title-block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+
+    h2 {
+        font-family: var(--font-family);
+        font-style: italic;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140%;
+        color: var(--title-color);
+        text-align: center;
+
+        opacity: 0.5;
+    }
+    
+    p {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 110%;
+        letter-spacing: -0.04em;
+        text-align: center;
+        color: #a2004e;
+    }
+}

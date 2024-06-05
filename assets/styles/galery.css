@@ -1,0 +1,17 @@
+.galery {
+    margin-top: 128px;
+}
+
+.galery-items {
+    margin-top: 52px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    .galery-items__one-column {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
