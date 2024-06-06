@@ -171,10 +171,14 @@
                 </div>
                 <form id="contactForm">
                     <div class="form-inputs">
-                        <input type="text" name="first_name" placeholder="Имя" required>
-                        <input type="text" name="last_name" placeholder="Фамилия" required>
-                        <input type="text" name="phone" placeholder="Телефон" required>
-                        <input type="text" name="message" placeholder="Сообщение" required>
+                        <div class="form-inputs-group">
+                            <input type="text" name="first_name" placeholder="Имя" required>
+                            <input type="text" name="last_name" placeholder="Фамилия" required>
+                        </div>
+                        <div class="form-inputs-group">
+                            <input type="text" name="phone" placeholder="Телефон" required>
+                            <input type="text" name="message" placeholder="Сообщение" required>
+                        </div>
                     </div>
                     <input type="submit" value="Отправить" class="questions-submit">
                 </form>

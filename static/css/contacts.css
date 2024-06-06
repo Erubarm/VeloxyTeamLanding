@@ -9,38 +9,46 @@ form {
         display: flex;
         flex-direction: row;
         gap: 20px;
-        flex-wrap: wrap;
 
-        input {
-            border-radius: 16px;
-            padding: 36px;
-            text-align: start;
+        .form-inputs-group {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
 
-            background: rgba(216, 142, 204, 0.4);
-            opacity: 0.5;
+            input {
+                border-radius: 16px;
+                padding: 36px;
 
-            font-family: var(--font-family);
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 140%;
-            color: #4f0018;
+                background: rgba(216, 142, 204, 0.4);
+                opacity: 0.5;
 
-            width: 45%;
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 140%;
+                color: #4f0018;
+
+                text-align: start;
+            }
         }
     }
-    input {
+
+    .questions-submit {
         border-radius: 16px;
-        padding: 36px 0px;
+        padding: 36px 0;
+        width: 100%;
 
         background: var(--title-color-accent);
-        opacity: 0.8;   
-        
+        opacity: 0.8;
+
         font-family: var(--font-family);
         font-weight: 500;
         font-size: 20px;
         line-height: 140%;
         text-align: center;
         color: #ffd2e8;
+
+        cursor: pointer;
     }
-    
 }
