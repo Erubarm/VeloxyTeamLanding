@@ -1,62 +1,133 @@
 .questions-list {
     margin-top: 72px;
-
     display: flex;
     flex-direction: column;
     gap: 24px;
-    details {
-        summary {
-            padding: 32px 0px;
-            border-bottom: 1px solid #c3c3c3;
-            border-top: 1px solid #c3c3c3;
-        
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
+}
 
-            span {
-                font-family: var(--font-family);
-                font-weight: 400;
-                font-size: 20px;
-                line-height: 140%;
-                text-align: center;
-                color: var(--title-color-accent);
-            }
+.questions-list details {
+    summary {
+        padding: 32px 0px;
+        border-bottom: 1px solid #c3c3c3;
+        border-top: 1px solid #c3c3c3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-            h3 {
-                font-family: var(--font-family);
-                font-weight: 500;
-                font-size: 42px;
-                line-height: 110%;
-                letter-spacing: -0.04em;
-                color: var(--title-color-accent);
-            }
-        }
+    summary span {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        text-align: center;
+        color: var(--title-color-accent);
+    }
 
-        .question-item__inner {
-            margin-top: 24px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            gap: 24px;
+    summary h3 {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 42px;
+        line-height: 110%;
+        letter-spacing: -0.04em;
+        color: var(--title-color-accent);
+    }
 
-            p {
-                font-family: var(--font-family);
-                font-weight: 500;
-                font-size: 24px;
-                line-height: 140%;
-                text-align: center;
-                color: var(--main-color);
-                width: 26vw;
-            }
+    .question-item__inner {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
+    }
 
-            img {
-                width: 33%;
-                height: 100%;
-            }
-        }
+    .question-item__inner p {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 140%;
+        text-align: center;
+        color: var(--main-color);
+        width: 26vw;
+    }
+
+    .question-item__inner img {
+        width: 33%;
+        height: 100%;
+    }
+}
+
+/* Адаптивные стили */
+@media (max-width: 1200px) {
+    .questions-list details summary {
+        padding: 24px 0px;
+    }
+
+    .questions-list details summary span {
+        font-size: 18px;
+    }
+
+    .questions-list details summary h3 {
+        font-size: 36px;
+    }
+
+    .question-item__inner p {
+        font-size: 20px;
+        width: 40vw;
+    }
+
+    .question-item__inner img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .questions-list details summary {
+        padding: 16px 0px;
+    }
+
+    .questions-list details summary span {
+        font-size: 16px;
+    }
+
+    .questions-list details summary h3 {
+        font-size: 30px;
+    }
+
+    .question-item__inner p {
+        font-size: 18px;
+        width: 60vw;
+    }
+
+    .question-item__inner img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .questions-list details summary {
+        padding: 12px 0px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .questions-list details summary span {
+        font-size: 14px;
+    }
+
+    .questions-list details summary h3 {
+        font-size: 24px;
+    }
+
+    .question-item__inner p {
+        font-size: 16px;
+        width: 80vw;
+    }
+
+    .question-item__inner img {
+        width: 90%;
     }
 }
