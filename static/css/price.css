@@ -1,65 +1,153 @@
 .price {
     margin-top: 128px;
+}
+
+.price-list {
+    margin-top: 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.price-list details {
+    padding: 32px 0px;
+    border-top: 2px solid #C3C3C3;
+    border-bottom: 2px solid #C3C3C3;
+}
+
+.price-list .details-inner {
+    margin-top: 128px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 140px;
+}
+
+.price-list .details-inner p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.price-list .details-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.price-list summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 64px;
+    text-align: center;
+    align-items: center;
+}
+
+.price-list summary p {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--title-color-accent);
+    width: 301px;
+}
+
+.price-list summary span {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+    color: #da639c;
+}
+
+/* Адаптивные стили */
+@media (max-width: 1200px) {
+    .price {
+        margin-top: 96px;
+    }
 
     .price-list {
-        margin-top: 72px;
-        display: flex;
+        margin-top: 64px;
+    }
+
+    .price-list .details-inner {
+        margin-top: 96px;
         flex-direction: column;
-        gap: 24px;
+        align-items: center;
+        gap: 40px;
+    }
 
-        details {
-            padding: 32px 0px;
-            border-top: 2px solid #C3C3C3;
-            border-bottom: 2px solid #C3C3C3;
+    .price-list summary {
+        padding: 0 32px;
+    }
 
-            .details-inner {
-                margin-top: 128px;
+    .price-list summary p {
+        font-size: 28px;
+        width: auto;
+    }
 
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                gap: 140px;
-                p {
-                    font-family: var(--font-family);
-                    font-weight: 500;
-                    font-size: 24px;
-                    line-height: 140%;
-                    text-align: center;
-                    color: var(--main-color);
-                }
+    .price-list summary span {
+        font-size: 20px;
+    }
+}
 
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
+@media (max-width: 768px) {
+    .price {
+        margin-top: 64px;
+    }
 
-            }
-            summary {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                padding: 0 64px;
-                text-align: center;
-                align-items: center;
+    .price-list {
+        margin-top: 48px;
+    }
 
-                p {
-                    font-family: var(--font-family);
-                    font-weight: 600;
-                    font-size: 32px;
-                    color: var(--title-color-accent);
-                    width: 301px;
-                }
+    .price-list .details-inner {
+        margin-top: 64px;
+        gap: 20px;
+    }
 
-                span {
-                    font-family: var(--font-family);
-                    font-weight: 600;
-                    font-size: 24px;
-                    line-height: 140%;
-                    text-align: center;
-                    color: #da639c;
-                }
-            }
-        }   
-    }   
+    .price-list summary {
+        padding: 0 16px;
+    }
+
+    .price-list summary p {
+        font-size: 24px;
+    }
+
+    .price-list summary span {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .price {
+        margin-top: 32px;
+    }
+
+    .price-list {
+        margin-top: 32px;
+    }
+
+    .price-list .details-inner {
+        margin-top: 32px;
+        gap: 10px;
+    }
+
+    .price-list summary {
+        padding: 0 8px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .price-list summary p {
+        font-size: 20px;
+        width: auto;
+    }
+
+    .price-list summary span {
+        font-size: 16px;
+    }
 }
