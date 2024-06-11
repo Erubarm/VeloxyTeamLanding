@@ -48,6 +48,31 @@ body {
     color: #a2004e;
 }
 
+details {
+    transition: all 0.5s ease;
+  }
+  
+  details[open] > summary ~ * {
+    animation: openDetails 0.5s ease-in-out;
+  }
+  
+  @keyframes openDetails {
+    from {
+      opacity: 0;
+      max-height: 0;
+    }
+    to {
+      opacity: 1;
+      max-height: 100vh; /* Достаточно большое значение для обеспечения видимости содержимого */
+    }
+  }
+
+summary { 
+    cursor: pointer;
+}
+
+
+
 /* Адаптивные стили */
 @media (max-width: 1200px) {
     .container {
