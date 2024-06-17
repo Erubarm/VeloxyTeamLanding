@@ -1,5 +1,18 @@
 header {
-    padding-top: 52px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    transition: all 0.3s;
+}
+
+header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: rgba(243, 239, 232, 0.6);
+    backdrop-filter: blur(54px);
 }
 
 .header-inner {
